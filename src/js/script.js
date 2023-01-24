@@ -15,7 +15,7 @@ displayScreen.addEventListener('mousedown', (e)=>{
     x = e.offsetX;
     y = e.offsetY;
     isDrawing = true;
-    displayScreen.style.cursor = "grab"
+    displayScreen.style.cursor = "move"
 })
 
 

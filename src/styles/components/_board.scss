@@ -2,7 +2,7 @@
 
 .board {
 
-    z-index: -1;
+    //z-index: -1;
 
     position: relative;
     //background-color: white;
@@ -13,6 +13,7 @@
 
     margin: auto;
 
+    
     .square {
         display: flex;
         align-items: center;
@@ -22,7 +23,17 @@
         border: solid 1px black;
         width: 50px;
         height: 50px;
-        top: 100px;
-        left: 700px;
+        //top: 100px;
+        //left: 700px;
+    }
+    #inner {
+        z-index: 2000;
+        top: calc( 7 * 50px);
+        left: calc( 19 * 50px);
+        background-color: red;
+
+        &:hover {
+            background-color: blue;
+        }
     }
 }
