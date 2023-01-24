@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.teste {
+  width: 5000px;
+  height: 2000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.display-screen {
+  min-height: 100vh;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.board {
+  z-index: -1;
+  position: relative;
+  width: 5000px;
+  height: 2000px;
+  margin: auto;
+}
+.board .square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  border: solid 1px black;
+  width: 50px;
+  height: 50px;
+  top: 100px;
+  left: 700px;
+}
+
+.display-header {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+.display-header h1 {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #FFF;
+  color: #212121;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.display-header .language {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.display-header .language button {
+  height: 30px;
+  width: 45px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.display-header .language #button-1 {
+  background-image: url("https://www.gov.br/planalto/pt-br/conheca-a-presidencia/acervo/simbolos-nacionais/bandeira/bandeiragrande.jpg");
+}
+.display-header .language #button-2 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/255px-Flag_of_the_United_Kingdom_%283-5%29.svg.png");
+}
+.display-header .language #button-3 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/255px-Flag_of_Spain.svg.png");
+}/*# sourceMappingURL=style.css.map */

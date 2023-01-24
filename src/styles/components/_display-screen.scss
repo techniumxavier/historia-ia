@@ -1,0 +1,10 @@
+@import '../abstract/variables';
+
+.display-screen {
+    min-height: 100vh;
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    //background-color: $color-light-gray;
+}
