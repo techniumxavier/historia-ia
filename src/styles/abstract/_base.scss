@@ -14,8 +14,8 @@ body::-webkit-scrollbar {
 }
 
 .interactive-layer {
-    width: 5000px;
-    height: 2000px;
+    width: $board-width;
+    height: $board-height;
     position: absolute;
     top: 0;
     left: 0;

@@ -11,8 +11,8 @@ body::-webkit-scrollbar {
 }
 
 .interactive-layer {
-  width: 5000px;
-  height: 2000px;
+  width: 12000px;
+  height: 1500px;
   position: absolute;
   top: 0;
   left: 0;
@@ -61,8 +61,8 @@ body::-webkit-scrollbar {
 
 .board {
   position: relative;
-  width: 5000px;
-  height: 2000px;
+  width: 12000px;
+  height: 1500px;
   margin: auto;
 }
 .board .square {
@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
 .board .spike-text {
   border-left: solid 1px white;
   padding: 0px 10px 20px 0px;
-  height: 100px;
+  height: 200px;
   width: 200px;
   position: absolute;
 }
@@ -104,13 +104,22 @@ body::-webkit-scrollbar {
 }
 .board .station {
   z-index: 100;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 .board .station img {
   width: 100%;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  cursor: pointer;
 }
 .board .station:hover {
   transform: scale(1.2);
+}
+.board .station:active {
+  transform: scale(1);
 }
 .board .rail {
   background-color: transparent;
@@ -146,8 +155,8 @@ body::-webkit-scrollbar {
   justify-content: space-evenly;
 }
 .display-header .language button {
-  height: 30px;
-  width: 45px;
+  height: 20px;
+  width: 30px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -170,7 +179,6 @@ body::-webkit-scrollbar {
 
 .content-section .content-card {
   width: 300px;
-  height: 400px;
   background-color: white;
   position: fixed;
   top: 100px;
@@ -192,7 +200,7 @@ body::-webkit-scrollbar {
 }
 .content-section .content-card .content-text {
   margin-top: 24px;
-  height: 180px;
+  height: 230px;
   overflow: auto;
   padding-right: 8px;
 }
@@ -204,7 +212,7 @@ body::-webkit-scrollbar {
   margin-bottom: 8px;
 }
 .content-section .content-card .content-year {
-  position: absolute;
+  margin: 8px auto 0 auto;
   bottom: 16px;
   width: calc(100% - 32px);
   border-bottom: 2px solid #8250ff;

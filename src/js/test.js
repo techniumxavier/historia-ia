@@ -17,11 +17,7 @@ function createTable(){
 }
 
 
-
-//createTable()
-
-
-function identifySquares(){
+/* function identifySquares(){
     const squares = document.getElementsByClassName('square')
 
     const squaresLenght = squares.length
@@ -32,17 +28,10 @@ function identifySquares(){
         squares[i].style.top = `calc(${19} * 50px)`
         squares[i].style.left = `calc(${49 - xOffset + i} * 50px)`
     }
-}
+} */
 
 
-
-
-//identifySquares()
-//createTable()   
-//centralizeScreen()
-
-
-const contents = getContentsFilteredsByTypes(data, ['artigo', 'invenção'])
+/* const contents = getContentsFilteredsByTypes(data, ['artigo', 'invenção'])
 
 function compare( a, b ) {
     if ( a.data_ano < b.data_ano ){
@@ -54,4 +43,69 @@ function compare( a, b ) {
     return 0;
 }
 
-const k = contents.sort(compare)
+const contentList = contents.sort(compare) */
+
+
+
+
+
+
+
+function generateElements(){
+
+    let htmlContent = ""
+
+    for(let i = 0; i < contentList.length; i++){
+
+        htmlContent = htmlContent + `
+        <!-- Estação ${i + 1} -->
+        <div class="square rail" style="top: calc(15 * 50px); left: calc(${10 + i*9} * 50px);">
+            <img src="./imgs/trilho_reto.svg" alt="">
+        </div>
+        <div class="square rail" style="top: calc(15 * 50px); left: calc(${11 + i*9} * 50px);">
+            <img src="./imgs/trilho_reto.svg" alt="">
+        </div>
+        <div class="square rail" style="top: calc(15 * 50px); left: calc(${12 + i*9} * 50px);">
+            <img src="./imgs/trilho_reto.svg" alt="">
+        </div>
+        <div class="square rail" style="top: calc(15 * 50px); left: calc(${13 + i*9} * 50px);">
+            <img src="./imgs/trilho_reto.svg" alt="">
+        </div>
+    
+    
+        <div class="spike-text" style="top: calc(11 * 50px); left: calc(${14 + i*9} * 50px + 25px);">
+            <h2 class="spike-h2">${contentList[i].título.original}</h2>
+        </div>
+        <div id="station-${i + 1}" class="square station" style="top: calc(15 * 50px); left: calc(${14 + i*9} * 50px);">
+            <img src="./imgs/checkpoint.svg" alt="">
+        </div>
+    
+    
+        <div class="square rail" style="top: calc(15 * 50px); left: calc(${15 + i*9} * 50px);">
+            <img src="./imgs/trilho_reto.svg" alt="">
+        </div>
+        <div class="square rail" style="top: calc(15 * 50px); left: calc(${16 + i*9} * 50px);">
+            <img src="./imgs/trilho_reto.svg" alt="">
+        </div>
+        <div class="square rail" style="top: calc(15 * 50px); left: calc(${17 + i*9} * 50px);">
+            <img src="./imgs/trilho_reto.svg" alt="">
+        </div>
+        <div class="square rail" style="top: calc(15 * 50px); left: calc(${18 + i*9} * 50px);">
+            <img src="./imgs/trilho_reto.svg" alt="">
+        </div>
+    
+    
+        <div class="year" style="top: calc(17 * 50px); left: calc(${11 + i*9} * 50px);">
+            <h6>${contentList[i].data_ano}</h6>
+        </div>`;
+
+    }
+
+    console.log(htmlContent)
+
+
+
+
+
+
+}

@@ -33,7 +33,7 @@
         //border-left: solid 1px white;
         border-left: solid 1px white;
         padding: 0px 10px 20px 0px;
-        height: calc(2 * 50px);
+        height: calc(4 * 50px);
         width: calc(4 * 50px);
         position: absolute;
         
@@ -73,12 +73,22 @@
         //top: calc(5 * 50px);
         //left: calc(15 * 50px);
         z-index: $level-10; 
-        transition: 0.2s ease-in-out;
+        transition: 0.1s ease-in-out;
         img {
             width: 100%;
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+            cursor: pointer;
+            
         }
         &:hover {
             transform: scale(1.2);
+        }
+        &:active {
+            transform: scale(1);
         }
     }
 
