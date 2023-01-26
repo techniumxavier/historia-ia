@@ -7,4 +7,18 @@
     align-items: center;
     justify-content: flex-start;
     //background-color: $color-light-gray;
+    .background-page {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        //background-image: url('../imgs/bg_sepia.png');
+        //background-position: center;
+        //background-repeat: no-repeat;
+        //background-size: cover;
+
+        background: radial-gradient($color-black-2, $color-black-1);
+    }
+    
 }

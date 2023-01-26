@@ -6,20 +6,20 @@ let yTarget = 0;
 
 
 
-//const displayScreen = document.getElementById('display-screen')
-const displayScreen = document.getElementById('teste')
+//const interactiveLayer = document.getElementById('display-screen')
+const interactiveLayer = document.getElementById('interactive-layer')
 
 
-displayScreen.addEventListener('mousedown', (e)=>{
+interactiveLayer.addEventListener('mousedown', (e)=>{
     e.preventDefault()
     x = e.offsetX;
     y = e.offsetY;
     isDrawing = true;
-    displayScreen.style.cursor = "move"
+    interactiveLayer.style.cursor = "move"
 })
 
 
-displayScreen.addEventListener('mousemove', (e) => {
+interactiveLayer.addEventListener('mousemove', (e) => {
     e.preventDefault()
     if (isDrawing) {
       xTarget = e.offsetX;
@@ -45,17 +45,16 @@ displayScreen.addEventListener('mousemove', (e) => {
         //y = 0;
       isDrawing = false;
 
-      displayScreen.style.cursor = "default"
+      interactiveLayer.style.cursor = "default"
     }
 });
 
 
 function centralizeScreen(){
-
   const viewportHeight = window.innerHeight;
   const viewportWidth = window.innerWidth;
-  const contentHeight = displayScreen.clientHeight;
-  const contentWidth = displayScreen.clientWidth;
+  const contentHeight = interactiveLayer.clientHeight;
+  const contentWidth = interactiveLayer.clientWidth;
   
   scrollTargetX = (contentWidth - viewportWidth)/2;
   scrollTargetY = (contentHeight - viewportHeight)/2;
@@ -64,3 +63,11 @@ function centralizeScreen(){
 }
 
 
+
+
+
+function getContentsFilteredsByTypes(data, types){
+  const contents = data.timeline
+  const filteredContents = contents.filter(content => types.includes(content.tipo))
+  return filteredContents
+}

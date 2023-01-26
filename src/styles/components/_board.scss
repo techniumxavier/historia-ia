@@ -2,7 +2,7 @@
 
 .board {
 
-    //z-index: -1;
+    //z-index: $level-5;
 
     position: relative;
     //background-color: white;
@@ -19,21 +19,78 @@
         align-items: center;
         justify-content: center;
         position: absolute;
-        background-color: white;
-        border: solid 1px black;
+        //background-color: white;
+        //border: solid 1px black;
         width: 50px;
         height: 50px;
         //top: 100px;
         //left: 700px;
-    }
-    #inner {
-        z-index: 2000;
-        top: calc( 7 * 50px);
-        left: calc( 19 * 50px);
-        background-color: red;
 
+    }
+    
+
+    .spike-text {
+        //border-left: solid 1px white;
+        border-left: solid 1px white;
+        padding: 0px 10px 20px 0px;
+        height: calc(2 * 50px);
+        width: calc(4 * 50px);
+        position: absolute;
+        
+        h2 {
+            padding: 10px ;
+            background: linear-gradient(to right, rgba($color: white, $alpha: 0.2), transparent);
+            color: white;
+            //border: 1px black solid;
+            //border-left: none;
+            //background-color: white;
+            font-size: $font-size-16px;
+            font-weight: $font-light-300;
+        }
+    }
+
+    .year {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: calc(7 * 50px);
+        height: calc(1 * 50px);
+        //background-color: rgba($color: #FFF, $alpha: 0.2);
+        //border-radius: 5px;
+        //border-bottom: 1px solid #8250ff;
+        border-bottom: 1px solid #8250ff;
+        //background: linear-gradient(to top, rgba($color: #8250ff, $alpha: 0.1), transparent);
+        background: linear-gradient(to top, rgba($color: #8250ff, $alpha: 0.1), transparent);
+        h6 {
+            color: white;
+            font-size: $font-size-24px;
+            font-weight: lighter;
+        }
+    }
+
+    .station {
+        //top: calc(5 * 50px);
+        //left: calc(15 * 50px);
+        z-index: $level-10; 
+        transition: 0.2s ease-in-out;
+        img {
+            width: 100%;
+        }
         &:hover {
-            background-color: blue;
+            transform: scale(1.2);
+        }
+    }
+
+    .rail {
+        //z-index: 2000;
+        //top: calc(5 * 50px);
+        //left: calc(14 * 50px);
+        background-color: $color-light-gray;
+        background: linear-gradient(to bottom, transparent, $color-light-gray, $color-light-gray, transparent);
+        img {
+            width: 100%;
+            
         }
     }
 }

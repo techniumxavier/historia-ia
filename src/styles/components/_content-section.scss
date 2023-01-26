@@ -1,0 +1,52 @@
+@import '../abstract/variables';
+
+.content-section {
+    .content-card {
+        width: 300px;
+        height: 400px;
+        background-color: white;
+        position: fixed;
+        top: 100px;
+        left: 50px;
+        z-index: $level-10;
+        padding: 16px;
+        border-radius: 8px;
+        h2, h3 {
+            font-weight: $font-regular-400;
+            font-size: $font-size-24px;
+        }
+        h2 {
+            color: black;
+        }
+        h3 {
+            color: #8250ff;
+            margin-top: 8px;
+        }
+        .content-text {
+            margin-top: 24px;
+            height: 180px;
+            overflow: auto;
+            padding-right: 8px;
+            h4 {
+                font-size: $font-size-16px;
+                font-weight: $font-regular-400;
+                &:first-child {
+                    margin-bottom: 8px;
+                }
+            }           
+        }
+
+        .content-year {
+             position: absolute;
+             bottom: 16px;
+             width: calc(100% - 2 * 16px);
+             border-bottom: 2px solid #8250ff;
+             h6 {
+                font-size: 32px;
+                font-weight: $font-regular-400;
+                color: #8250ff;
+                text-align: center;
+             }
+        }
+    }
+}

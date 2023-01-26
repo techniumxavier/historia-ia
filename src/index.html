@@ -12,6 +12,7 @@
 </head>
 <body>
 
+    
     <div class="display-header">
         <div class="void-div language"></div>
         <h1>A História da Inteligência Artificial</h1>
@@ -21,16 +22,81 @@
             <button id="button-3"></button>
         </div>
     </div>
-
-    <div class="teste" id="teste"></div>
-
+    
+    
     <main class="display-screen" id="display-screen" teste="OK">
+        <div class="background-page"></div>
         <div class="board" id="board">
-            <div class="square" id="inner"></div>
+
+            <!-- Estação 1 -->
+            <div class="square rail" style="top: calc(10 * 50px); left: calc(10 * 50px);">
+                <img src="./imgs/trilho_reto.svg" alt="">
+            </div>
+            <div class="square rail" style="top: calc(10 * 50px); left: calc(11 * 50px);">
+                <img src="./imgs/trilho_reto.svg" alt="">
+            </div>
+            <div class="square rail" style="top: calc(10 * 50px); left: calc(12 * 50px);">
+                <img src="./imgs/trilho_reto.svg" alt="">
+            </div>
+            <div class="square rail" style="top: calc(10 * 50px); left: calc(13 * 50px);">
+                <img src="./imgs/trilho_reto.svg" alt="">
+            </div>
+            <div class="spike-text" style="top: calc(8 * 50px); left: calc(14 * 50px + 25px);">
+                <h2>Máquinas de computação e inteligência</h2>
+            </div>
+<!--             <div class="spike-text" style="top: calc(6 * 50px); left: calc(14 * 50px + 25px);">
+                <h2>Máquinas de computação e inteligência</h2>
+            </div> -->
+            <div class="square station" style="top: calc(10 * 50px); left: calc(14 * 50px);">
+                <img src="./imgs/checkpoint.svg" alt="">
+            </div>
+            <div class="square rail" style="top: calc(10 * 50px); left: calc(15 * 50px);">
+                <img src="./imgs/trilho_reto.svg" alt="">
+            </div>
+            <div class="square rail" style="top: calc(10 * 50px); left: calc(16 * 50px);">
+                <img src="./imgs/trilho_reto.svg" alt="">
+            </div>
+            <div class="square rail" style="top: calc(10 * 50px); left: calc(17 * 50px);">
+                <img src="./imgs/trilho_reto.svg" alt="">
+            </div>
+            <div class="square rail" style="top: calc(10 * 50px); left: calc(18 * 50px);">
+                <img src="./imgs/trilho_reto.svg" alt="">
+            </div>
+            <div class="year" style="top: calc(12 * 50px); left: calc(11 * 50px);">
+                <h6>1950</h6>
+            </div>
+
+
+
+
+            
+
+
+
+
         </div>  
     </main>
 
+    <div class="interactive-layer" id="interactive-layer"></div>
+
+    <section class="content-section">
+        <div class="content-card">
+            <h2>Computing Machinery and Intelligence</h2>
+            <h3>Alan Turing</h3>
+            <div class="content-text">
+                <h4>Alan Turing's article described what would become known as the Turing Test, a means of determining a machine's intelligence.</h4>
+                <h4>The Turing test is widely considered as a milestone in the history of artificial intelligence and is still used as a measure of artificial intelligence today.</h4>
+            </div>
+            <div class="content-year">
+                <h6>1950</h6>
+            </div>
+
+        </div>
+    </section>
+
+    
     <!-- Código em JS -->
+    <script type="text/javascript" src="./js/data.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
     <script type="text/javascript" src="./js/test.js"></script>
 

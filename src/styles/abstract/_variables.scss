@@ -4,8 +4,9 @@ $board-height: 2000px;
 
 
 //Colors
-$color-light-gray: #e4e4e4;
+$color-light-gray: transparent;
 $color-black-1: #212121;
+$color-black-2: #424242;
 $color-white-1: #FFF;
 
 //Font-sizes
@@ -26,13 +27,13 @@ $linear-white: white;
 
 
 //Z-index levels
-$z-level-1: 10;
-$z-level-2: 20;
-$z-level-3: 30;
-$z-level-4: 40;
-$z-level-5: 50;
-$z-level-6: 60;
-$z-level-7: 70;
-$z-level-8: 80;
-$z-level-9: 90;
-$z-level-10: 100;
+$level-1: 10;
+$level-2: 20;
+$level-3: 30;
+$level-4: 40;
+$level-5: 50;
+$level-6: 60;
+$level-7: 70;
+$level-8: 80;
+$level-9: 90;
+$level-10: 100;
