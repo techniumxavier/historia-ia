@@ -16,7 +16,6 @@ body::-webkit-scrollbar {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 60;
 }
 
 /* width */
@@ -57,8 +56,8 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   background: radial-gradient(#424242, #212121);
+  -webkit-backface-visibility: hidden;
 }
-
 .board {
   position: relative;
   width: 12000px;
@@ -103,7 +102,7 @@ body::-webkit-scrollbar {
   font-weight: lighter;
 }
 .board .station {
-  z-index: 100;
+  z-index: 70;
   transition: 0.1s ease-in-out;
 }
 .board .station img {
@@ -114,6 +113,7 @@ body::-webkit-scrollbar {
   -o-user-drag: none;
   user-drag: none;
   cursor: pointer;
+  position: relative;
 }
 .board .station:hover {
   transform: scale(1.2);
@@ -130,7 +130,7 @@ body::-webkit-scrollbar {
 }
 
 .display-header {
-  z-index: 70;
+  z-index: 80;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -149,7 +149,8 @@ body::-webkit-scrollbar {
   font-weight: 400;
 }
 .display-header .language {
-  width: 300px;
+  width: 100%;
+  max-width: 200px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -175,6 +176,43 @@ body::-webkit-scrollbar {
 }
 .display-header .language #button-3 {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/255px-Flag_of_Spain.svg.png");
+}
+.display-header .feedback {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  margin: 0 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.display-header .feedback a, .display-header .feedback a:visited, .display-header .feedback a:active {
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  border: solid white 2px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+}
+.display-header .feedback a:hover, .display-header .feedback a:visited:hover, .display-header .feedback a:active:hover {
+  background-color: white;
+  color: black;
+}
+@media screen and (max-width: 1000px) {
+  .display-header {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+  }
+  .display-header h1 {
+    font-size: 1.5rem;
+  }
+  .display-header .void-div {
+    display: none;
+  }
 }
 
 .content-section .content-card {
@@ -222,4 +260,76 @@ body::-webkit-scrollbar {
   font-weight: 400;
   color: #8250ff;
   text-align: center;
+}
+.content-section .content-card #button-close-content {
+  display: none;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  color: black;
+  font-size: 1.5rem;
+  float: right;
+}
+@media screen and (max-width: 1000px) {
+  .content-section .content-card {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-right: 62px;
+  }
+  .content-section .content-card #button-close-content {
+    display: inline;
+    position: absolute;
+    right: 16px;
+  }
+}
+
+.footer-page {
+  z-index: 70;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: transparent;
+  padding: 10px;
+}
+.footer-page h5 {
+  text-align: center;
+  color: #bdbdbd;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+.footer-page h5 a, .footer-page h5 a:active, .footer-page h5 a:visited {
+  font-weight: 700;
+  color: #e0e0e0;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0px;
+}
+.footer-page h5 a:hover, .footer-page h5 a:active:hover, .footer-page h5 a:visited:hover {
+  color: #8250ff;
+}
+@media screen and (min-width: 1000px) {
+  .footer-page .mobile-footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footer-page .desktop-footer {
+    display: none;
+  }
+}
+
+.scale-info-div {
+  z-index: 70;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  padding: 10px;
+  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */

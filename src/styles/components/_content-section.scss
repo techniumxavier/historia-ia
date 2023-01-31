@@ -49,5 +49,30 @@
                 text-align: center;
              }
         }
+        #button-close-content {
+            display: none;
+            width: 30px;
+            height: 30px;
+            border: none;
+            background: transparent;
+            color: black;
+            font-size: $font-size-24px;
+            float: right;
+        }
     }
-}
+
+    @media screen and (max-width: $mobile-max) {
+        .content-card {
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            padding-right: 16px + 30px + 16px;
+            #button-close-content {
+                display: inline;
+                position: absolute;
+                right: 16px;
+            }
+        }
+    }
+}   

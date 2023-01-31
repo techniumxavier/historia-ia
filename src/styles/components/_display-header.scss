@@ -2,7 +2,7 @@
 
 .display-header {
 
-    z-index: $level-7;
+    z-index: $level-8;
 
     display: flex;
     align-items: center;
@@ -28,7 +28,8 @@
     }
 
     .language {
-        width: 300px;
+        width: 100%;
+        max-width: 200px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -63,4 +64,47 @@
 
 
     }
+
+    .feedback {
+        width: fit-content;
+        display: flex;
+        margin: 0 20px;
+        align-items: center;
+        justify-content: space-evenly;
+        a, a:visited, a:active {
+            transition: 0.2s ease-in-out;
+            text-decoration: none;
+            border: solid white 2px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: transparent;
+            color: white;
+            font-size: $font-size-16px;
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+        
+        
+    }
+
+    @media screen and (max-width: $mobile-max) {
+        height: fit-content;
+        flex-direction: column;
+        
+        h1 {
+            font-size: $font-size-24px;
+        }
+        .void-div {
+            display: none;
+        }
+        .language {
+            
+        }
+        .feedback {
+            
+        }
+    }
+
 }

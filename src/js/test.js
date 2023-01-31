@@ -101,11 +101,33 @@ function generateElements(){
 
     }
 
+    //console.log(htmlContent)
+
+
+    
+
+
+
+
+
+}
+
+
+
+
+
+function generateStations(){
+    let htmlContent = '';
+    
+    for(let i = 0; i < 23; i ++){
+        htmlContent = htmlContent + 
+        `
+            <div id="station-${i + 1}" class="square station" style="top: calc(15 * 50px); left: calc(${14 + i*9} * 50px);">
+                <img src="./imgs/checkpoint.svg" alt="">
+            </div>
+        `;
+    }
+
     console.log(htmlContent)
-
-
-
-
-
 
 }

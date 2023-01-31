@@ -1,0 +1,12 @@
+@import '../abstract/variables';
+
+.scale-info-div {
+    z-index: $level-7;
+    background-color: rgba($color: #FFF, $alpha: 0.5);
+    position: fixed;
+    bottom: 50px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 50px;
+
+}  

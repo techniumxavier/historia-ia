@@ -1,13 +1,14 @@
 @import '../abstract/variables';
 
-.board {
 
+
+.board {
+    //transform: scale(0.5);
     //z-index: $level-5;
 
     position: relative;
-    //background-color: white;
-
-    
+    //background-color: red;
+     
     width: $board-width;
     height: $board-height;
 
@@ -72,7 +73,7 @@
     .station {
         //top: calc(5 * 50px);
         //left: calc(15 * 50px);
-        z-index: $level-10; 
+        z-index: $level-7; 
         transition: 0.1s ease-in-out;
         img {
             width: 100%;
@@ -82,6 +83,7 @@
             -o-user-drag: none;
             user-drag: none;
             cursor: pointer;
+            position: relative;
             
         }
         &:hover {

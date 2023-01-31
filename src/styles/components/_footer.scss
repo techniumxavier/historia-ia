@@ -1,0 +1,45 @@
+@import '../abstract/variables';
+
+
+.footer-page {
+    z-index: $level-7;
+    height: fit-content;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: transparent;
+    padding: 10px;
+    h5 {
+        text-align: center;
+        color: #bdbdbd;
+        font-size: $font-size-12px;
+        font-weight: 300;
+        a, a:active, a:visited {
+            font-weight: $font-bold-700;
+            color: #e0e0e0;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 0px;
+            &:hover {
+                color: #8250ff;
+            }
+        }
+        
+    }
+
+    //background-color: black;
+    
+    
+    @media screen and (min-width: $mobile-max) {
+        .mobile-footer {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $mobile-max) {
+        .desktop-footer {
+            display: none;
+        }
+    }
+
+}
