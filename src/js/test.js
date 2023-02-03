@@ -55,10 +55,11 @@ function generateElements(){
 
     let htmlContent = ""
 
-    for(let i = 0; i < contentList.length; i++){
+/*     for(let i = 0; i < contentList.length; i++){ */
+
+    for(let i = 0; i < 2; i++){
 
         htmlContent = htmlContent + `
-        <!-- Estação ${i + 1} -->
         <div class="square rail" style="top: calc(15 * 50px); left: calc(${10 + i*9} * 50px);">
             <img src="./imgs/trilho_reto.svg" alt="">
         </div>
@@ -101,14 +102,7 @@ function generateElements(){
 
     }
 
-    //console.log(htmlContent)
-
-
-    
-
-
-
-
+    console.log(htmlContent)
 
 }
 
@@ -129,5 +123,59 @@ function generateStations(){
     }
 
     console.log(htmlContent)
+
+}
+
+
+
+
+
+
+
+function generateElements2() {
+
+    let htmlContent  = '';
+
+    for(let i = 0; i < 39; i++){
+
+        if(i < 28){
+            htmlContent = htmlContent +
+            ` 
+            <div class="station-unity" style="  left: calc(0 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-${i + 1}" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">${data.timeline[i].título.original}</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div>`;
+        } else {
+            htmlContent = htmlContent +
+            `
+            <div class="ai-winter-unity" style="  left: calc(0 * 50px); top: calc(30 * 50px);">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">${data.timeline[i].título.original}</h2>
+                    <div class="spike-line"></div>
+                </div>
+
+                <div id="station-${i + 1}" class="square station" style="bottom: calc(0 * 50px); left: calc(3 * 50px);"></div>
+
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(6 * 50px);"></div>
+
+            </div>
+            `
+        }
+
+        console.log(htmlContent)
+
+    }
 
 }

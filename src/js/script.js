@@ -57,7 +57,7 @@ function centralizeScreen(){
 
 
 //Obtendo dados fitlrados
-function getContentsFilteredsByTypes(data, types){
+/* function getContentsFilteredsByTypes(data, types){
   const contents = data.timeline
   const filteredContents = contents.filter(content => types.includes(content.tipo))
   return filteredContents
@@ -75,7 +75,9 @@ function compare( a, b ) {
     return 0;
 }
 
-const contentList = contents.sort(compare)
+const contentList = contents.sort(compare) */
+
+const contentList = data.timeline;
 
 
 
@@ -112,22 +114,23 @@ function updateContentCard(){
   const textFooterDesktop = document.getElementById('text-footer-desktop')
   const textFooterMobile = document.getElementById('text-footer-mobile')
 
+  //Atualizando os textos do footer e o título da página
   if(currentLanguage == 'en'){
     titlePage.innerHTML = 'The History of AI';
-    textFooterDesktop.innerHTML = 'Created and maintained by <a href="https://technium.me/" target="_blank">technium.me</a>. The History of AI. Jan 27 Version. Free Preview. We are working to be the largest collection in the history of artificial intelligence. Your feedback will help us improve. Always in beta.';
-    textFooterMobile.innerHTML = 'Created and maintained by <a href="https://technium.me/" target="_blank">technium.me</a>.';
+    textFooterDesktop.innerHTML = 'Created and maintained by <a href="https://technium.me/" target="_blank">technium.me</a>. The History of AI. Jan 27 Version. Free Preview. We are working to be the largest collection in the history of artificial intelligence. Your <a href="" target="_blank">feedback</a> will help us improve. Always in beta.';
+    textFooterMobile.innerHTML = 'Created and maintained by <a href="https://technium.me/" target="_blank">technium.me</a>. Your <a href="" target="_blank">feedback</a> will help us improve.';
   } else if (currentLanguage == 'pt'){
     titlePage.innerHTML = 'A História da IA'
-    textFooterDesktop.innerHTML = 'Criado e mantido pela <a href="https://technium.me/" target="_blank">technium.me</a>. A História da IA. Versão de 27 de janeiro. Visualização gratuita. Estamos trabalhando para ser a maior coleção da história da inteligência artificial. Seus comentários nos ajudarão a melhorar. Sempre em beta.';
-    textFooterMobile.innerHTML = 'Criado e mantido pela <a href="https://technium.me/" target="_blank">technium.me</a>.'
+    textFooterDesktop.innerHTML = 'Criado e mantido pela <a href="https://technium.me/" target="_blank">technium.me</a>. A História da IA. Versão de 27 de janeiro. Visualização gratuita. Estamos trabalhando para ser a maior coleção da história da inteligência artificial. Seus <a href="" target="_blank">comentários</a> nos ajudarão a melhorar. Sempre em beta.';
+    textFooterMobile.innerHTML = 'Criado e mantido pela <a href="https://technium.me/" target="_blank">technium.me</a>. Seus <a href="" target="_blank">comentários</a> nos ajudarão a melhorar.'
   } else if (currentLanguage == 'es'){
     titlePage.innerHTML = 'La historia de la IA'
-    textFooterDesktop.innerHTML = 'Creado y mantenido por <a href="https://technium.me/" target="_blank">technium.me</a>. La historia de la IA. Versión del 27 de enero. Vista previa gratuita. Estamos trabajando para ser la colección más grande en la historia de la inteligencia artificial. Tu recomendación nos ayudará a mejorar. Siempre en beta.';
-    textFooterMobile.innerHTML = 'Creado y mantenido por <a href="https://technium.me/" target="_blank">technium.me</a>.'
+    textFooterDesktop.innerHTML = 'Creado y mantenido por <a href="https://technium.me/" target="_blank">technium.me</a>. La historia de la IA. Versión del 27 de enero. Vista previa gratuita. Estamos trabajando para ser la colección más grande en la historia de la inteligencia artificial. Tu <a href="" target="_blank">recomendación</a> nos ayudará a mejorar. Siempre en beta.';
+    textFooterMobile.innerHTML = 'Creado y mantenido por <a href="https://technium.me/" target="_blank">technium.me</a>. Tu <a href="" target="_blank">recomendación</a> nos ayudará a mejorar.'
   }
 
 
-
+  //Atualizando os indicadores de conteúdo
   const spikes = document.getElementsByClassName('spike-h2')
   for(let i = 0; i < spikes.length; i++){
     if(currentLanguage == 'en'){
@@ -139,24 +142,63 @@ function updateContentCard(){
     }
   }
   
+  //Atualizando o texto do card
   currentData = contentList[contentIndex]
   if(currentLanguage == 'en'){
     contentTitle.innerHTML = currentData.título.en;
-    contentAuthor.innerHTML = currentData.autores.en;
+    //Autores
+    try {
+      contentAuthor.innerHTML = currentData.autores.en;
+    } catch {
+      contentAuthor.innerHTML = ''
+    }
+    //Resumo
     contentSummary.innerHTML = currentData.resumo.en;
-    contentImportance.innerHTML = currentData.importância.en;
+    //Importância
+    try {
+      contentImportance.innerHTML = currentData.importância.en;
+    } catch {
+      contentImportance.innerHTML = currentData.importancia.en;
+    }
+    //Ano
     contentYear.innerHTML = currentData.data_ano;
   } else if (currentLanguage == 'pt') {
+    //Título
     contentTitle.innerHTML = currentData.título.pt;
-    contentAuthor.innerHTML = currentData.autores.pt;
+    //Autor
+    try {
+      contentAuthor.innerHTML = currentData.autores.pt;
+    } catch {
+      contentAuthor.innerHTML = ''
+    }
+    //Resumo
     contentSummary.innerHTML = currentData.resumo.pt;
-    contentImportance.innerHTML = currentData.importância.pt;
+    //Importância
+    try {
+      contentImportance.innerHTML = currentData.importância.pt;
+    } catch {
+      contentImportance.innerHTML = currentData.importancia.pt;
+    }
+    //Ano
     contentYear.innerHTML = currentData.data_ano;
   } else if (currentLanguage == 'es') {
+    //Título
     contentTitle.innerHTML = currentData.título.es;
-    contentAuthor.innerHTML = currentData.autores.es;
+    //Autor
+    try {
+      contentAuthor.innerHTML = currentData.autores.es;
+    } catch {
+      contentAuthor.innerHTML = ''
+    }
+    //Resumo
     contentSummary.innerHTML = currentData.resumo.es;
-    contentImportance.innerHTML = currentData.importância.es;
+    //Importância
+    try {
+      contentImportance.innerHTML = currentData.importância.es;
+    } catch {
+      contentImportance.innerHTML = currentData.importancia.es;
+    }
+    //Ano
     contentYear.innerHTML = currentData.data_ano;
   }
 
@@ -170,29 +212,68 @@ const contentYear = document.getElementById('content-year')
 
 
 //Gerando gatilhos de eventos para cada um dos pontos de interação do mapa
-for (let i = 0; i < 23; i++){
+for (let i = 0; i < 39; i++){
   const station = document.getElementById(`station-${i + 1}`);
   station.addEventListener('click', () => {
     document.getElementById('content-card').style.display = 'inline';
     contentIndex = i
     currentData = contentList[i]
     if(currentLanguage == 'en'){
+      //Título
       contentTitle.innerHTML = currentData.título.en;
-      contentAuthor.innerHTML = currentData.autores.en;
+      //Autor
+      try {
+        contentAuthor.innerHTML = currentData.autores.en;
+      } catch {
+        contentAuthor.innerHTML = ''
+      }
+      //Resumo
       contentSummary.innerHTML = currentData.resumo.en;
-      contentImportance.innerHTML = currentData.importância.en;
+      //Importância
+      try {
+        contentImportance.innerHTML = currentData.importância.en;
+      } catch {
+        contentImportance.innerHTML = currentData.importancia.en;
+      }
+      //Ano
       contentYear.innerHTML = currentData.data_ano;
     } else if (currentLanguage == 'pt') {
+      //Título
       contentTitle.innerHTML = currentData.título.pt;
-      contentAuthor.innerHTML = currentData.autores.pt;
+      //Autor
+      try {
+        contentAuthor.innerHTML = currentData.autores.pt;
+      } catch {
+        contentAuthor.innerHTML = ''
+      }
+      //Resumo
       contentSummary.innerHTML = currentData.resumo.pt;
-      contentImportance.innerHTML = currentData.importância.pt;
+      //Importância
+      try {
+        contentImportance.innerHTML = currentData.importância.pt;
+      } catch {
+        contentImportance.innerHTML = currentData.importancia.pt;
+      }
+      //Ano
       contentYear.innerHTML = currentData.data_ano;
     } else if (currentLanguage == 'es') {
+      //Título
       contentTitle.innerHTML = currentData.título.es;
-      contentAuthor.innerHTML = currentData.autores.es;
+      //Autor
+      try {
+        contentAuthor.innerHTML = currentData.autores.es;
+      } catch {
+        contentAuthor.innerHTML = ''
+      }
+      //Resumo
       contentSummary.innerHTML = currentData.resumo.es;
-      contentImportance.innerHTML = currentData.importância.es;
+      //Importância
+      try {
+        contentImportance.innerHTML = currentData.importância.es;
+      } catch {
+        ontentImportance.innerHTML = currentData.importancia.es;
+      }
+      //Ano
       contentYear.innerHTML = currentData.data_ano;
     }
   })
@@ -231,8 +312,8 @@ function closeContentCard() {
 
 
 
-const IL_DEFAULT_WIDTH = 12000;
-const IL_DEFAULT_HEIGHT = 1500;
+const IL_DEFAULT_WIDTH = 20000;
+const IL_DEFAULT_HEIGHT = 3000;
 
 let scale = 1
 
@@ -252,7 +333,7 @@ addEventListener('wheel', (event) => {
     const boardLeftOffset = ((scale - 1) / 0.0625) * 375;
     
     board.style.transform = `scale(${scale})`;
-    
+
     
     if(scale * IL_DEFAULT_HEIGHT < IL_DEFAULT_HEIGHT){
       interactiveLayer.style.width = `${IL_DEFAULT_WIDTH}px`;

@@ -6,13 +6,9 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 .interactive-layer {
-  width: 12000px;
-  height: 1500px;
+  width: 20000px;
+  height: 3000px;
   position: absolute;
   top: 0;
   left: 0;
@@ -60,8 +56,8 @@ body::-webkit-scrollbar {
 }
 .board {
   position: relative;
-  width: 12000px;
-  height: 1500px;
+  width: 20000px;
+  height: 3000px;
   margin: auto;
 }
 .board .square {
@@ -73,15 +69,25 @@ body::-webkit-scrollbar {
   height: 50px;
 }
 .board .spike-text {
-  border-left: solid 1px white;
-  padding: 0px 10px 20px 0px;
   height: 200px;
   width: 200px;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.board .spike-text .spike-line {
+  bottom: 0;
+  left: calc(50% + 1px);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, white, transparent);
 }
 .board .spike-text h2 {
   padding: 10px;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), transparent);
+  max-width: 350px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
   color: white;
   font-size: 1rem;
   font-weight: 300;
@@ -121,12 +127,80 @@ body::-webkit-scrollbar {
 .board .station:active {
   transform: scale(1);
 }
-.board .rail {
-  background-color: transparent;
-  background: linear-gradient(to bottom, transparent, transparent, transparent, transparent);
-}
 .board .rail img {
   width: 100%;
+}
+.board .long-rail {
+  width: 200px;
+  height: 50px;
+  background-image: url("../imgs/trilho_reto.svg");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: left;
+  background-size: 25%;
+}
+.board .station-unity {
+  position: absolute;
+  width: 450px;
+  height: 300px;
+}
+.board .station-unity .spike-text {
+  width: 350px;
+}
+.board .down-curve-unity {
+  position: absolute;
+  width: 900px;
+  height: 350px;
+}
+.board .down-curve-unity .long-curve-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../imgs/curva_longa_18x7.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.board .down-curve-unity .long-rail {
+  width: 450px;
+  background-size: 11.1111111111%;
+}
+.board .ai-winter-unity {
+  position: absolute;
+  width: 450px;
+  height: 300px;
+}
+.board .ai-winter-unity .spike-text {
+  width: 350px;
+}
+.board .ai-winter-unity .long-rail {
+  width: 150px;
+  background-size: 33.3333333333%;
+}
+.board .ai-winter-unity .station {
+  background-image: url("../imgs/trilho_quebrado.svg");
+  width: 150px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.board .left-rail-building {
+  position: absolute;
+  height: 50px;
+  width: 250px;
+  background-image: url("../imgs/trilho_construcao_esquerda.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.board .right-rail-building {
+  position: absolute;
+  height: 50px;
+  width: 250px;
+  background-image: url("../imgs/trilho_construcao_direita.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .display-header {
@@ -178,11 +252,7 @@ body::-webkit-scrollbar {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/255px-Flag_of_Spain.svg.png");
 }
 .display-header .feedback {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   display: flex;
-  margin: 0 20px;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -220,7 +290,7 @@ body::-webkit-scrollbar {
   background-color: white;
   position: fixed;
   top: 100px;
-  left: 50px;
+  left: 20px;
   z-index: 100;
   padding: 16px;
   border-radius: 8px;
@@ -326,7 +396,7 @@ body::-webkit-scrollbar {
 
 .scale-info-div {
   z-index: 70;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
   position: fixed;
   bottom: 50px;
   left: 20px;

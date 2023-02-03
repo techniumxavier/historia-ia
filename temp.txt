@@ -1,0 +1,48 @@
+
+            <div class="station-unity" style="  left: calc(10 * 50px); top: calc(15 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+
+                <div id="station-1" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Computing Machinery and Intelligence Computing Machinery and Intelligence</h2>
+                    <div class="spike-line"></div>
+                </div>
+
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div>
+
+
+
+
+            <div class="down-curve-unity" style="  left: calc(19 * 50px); top: calc(20 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(6 * 50px); left: calc(0 * 50px);"></div>
+                <div class="long-curve-bg"></div>
+            </div>
+
+
+
+
+            <div class="ai-winter-unity" style="  left: calc(37 * 50px); top: calc(15 * 50px);">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Computing Machinery and Intelligence Computing Machinery and Intelligence</h2>
+                    <div class="spike-line"></div>
+                </div>
+
+                <div id="station-2" class="square station" style="bottom: calc(0 * 50px); left: calc(3 * 50px);"></div>
+
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(6 * 50px);"></div>
+
+            </div>
+        
+
+
+
+
+            <div class="year" style="top: calc(22 * 50px); left: calc(11 * 50px);">
+                <h6>1950</h6>
+            </div>

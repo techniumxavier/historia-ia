@@ -30,6 +30,7 @@
     .language {
         width: 100%;
         max-width: 200px;
+        //background-color: red;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -66,9 +67,9 @@
     }
 
     .feedback {
-        width: fit-content;
+        //width: fit-content;
         display: flex;
-        margin: 0 20px;
+        //margin: 0 20px;
         align-items: center;
         justify-content: space-evenly;
         a, a:visited, a:active {

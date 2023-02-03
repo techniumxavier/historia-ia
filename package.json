@@ -1,0 +1,25 @@
+{
+  "name": "historia-ia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techniumxavier/historia-ia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techniumxavier/historia-ia/issues"
+  },
+  "homepage": "https://github.com/techniumxavier/historia-ia#readme",
+  "devDependencies": {
+    "html-webpack-inline-source-plugin": "^0.0.10",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

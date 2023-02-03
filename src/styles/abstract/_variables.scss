@@ -1,6 +1,9 @@
 //Configurations
-$board-width: 12000px;
-$board-height: 1500px;
+$board-width: 20000px;
+$board-height: 3000px;
+
+$rail-div-width: calc(4 * 50px);
+$rail-div-background-size: calc(100% / 4);
 
 //Responsiveness settings
 $mobile-max: 1000px;

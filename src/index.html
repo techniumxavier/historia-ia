@@ -15,8 +15,8 @@
 
     
     <div class="display-header">
-        <div class="feedback">
-            <a href="" target="_blank" id="feedback-link">Envie sua sugestão ou correção</a>
+        <div class="feedback language">
+            <!-- <a href="" target="_blank" id="feedback-link">Envie sua sugestão ou correção</a> -->
         </div>
         <h1 id="title-page">A História da Inteligência Artificial</h1>
         <div class="language">
@@ -29,134 +29,593 @@
     
     <main class="display-screen" id="display-screen" teste="OK">
         <div class="background-page"></div>
+        
         <div class="board" id="board">
 
-<!-- 
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(10 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(11 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(12 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(13 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
+            <div class="station-unity" style="  left: calc(20 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-1" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Computing Machinery and Intelligence</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+
+                <div class="left-rail-building" style="left: calc(-3 * 50px); bottom: calc(0 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(29 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-2" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(38 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-3" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Primeira rede neural artificial</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(173 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-4" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Convolutional Neural Networks</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(209 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-5" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Recurrent Neural Networks</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(218 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-6" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Long Short-Term Memory</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(272 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-7" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Transformers</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(281 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-8" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">BERT</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(308 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-9" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">GPT-3</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(317 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-10" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">DALL-E</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(326 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-11" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Deit</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(335 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-12" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">ELECTRA</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+
+                <div class="right-rail-building" style="left: calc(9 * 50px); bottom: calc(0 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(47 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-13" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Adaline</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(65 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-14" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">ELIZA</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(83 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-15" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">A* Algorithm</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(128 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-16" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Backpropagation</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(56 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-17" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Unimate</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(191 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-18" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">C4.5</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(245 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-19" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Deep Learning</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(254 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-20" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Generative Adversarial Networks (GANs)</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(263 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-21" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">AlphaGo</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(290 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-22" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">AlphaFold</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(299 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-23" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">AlphaStar</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(186 * 50px); top: calc(18 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-24" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">A Lei do Efeito</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+
+            </div> 
+
+            <div class="station-unity" style="  left: calc(263 * 50px); top: calc(36 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-25" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Learning direct control from high-dimensional sensory input using reinforcement learning</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+
+                <div class="right-rail-building" style="left: calc(9 * 50px); bottom: calc(0 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(177 * 50px); top: calc(18 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-26" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">undefined</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+
+                <div class="left-rail-building" style="bottom: calc(0 * 50px); left: calc(-3 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(227 * 50px); top: calc(30 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-27" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Modern Reinforcement Learning</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
+            </div> 
+
+            <div class="station-unity" style="  left: calc(254 * 50px); top: calc(36 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+    
+                <div id="station-28" class="square station" style="bottom: calc(0 * 50px); left: calc(4 * 50px);">
+                    <img src="./imgs/checkpoint.svg" alt="">
+                </div>
+                
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Q-learning</h2>
+                    <div class="spike-line"></div>
+                </div>
+    
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(5 * 50px);"></div>
             </div>
 
+            <div class="ai-winter-unity" style="  left: calc(137 * 50px); top: calc(30 * 50px);">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
 
-            <div class="spike-text" style="top: calc(6 * 50px); left: calc(14 * 50px + 25px);">
-                <h2 class="spike-h2">Máquinas de computação e inteligência</h2>
-            </div>
-            <div id="station-1" class="square station" style="top: calc(10 * 50px); left: calc(14 * 50px);">
-                <img src="./imgs/checkpoint.svg" alt="">
-            </div>
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">First AI Winter (1974-1980)</h2>
+                    <div class="spike-line"></div>
+                </div>
 
+                <div id="station-29" class="square station" style="bottom: calc(0 * 50px); left: calc(3 * 50px);"></div>
 
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(15 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(16 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(17 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(18 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(6 * 50px);"></div>
 
-
-            <div class="year" style="top: calc(12 * 50px); left: calc(11 * 50px);">
-                <h6>1950</h6>
-            </div>
-
-
-
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(19 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(20 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(21 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(22 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-
-
-            <div class="spike-text" style="top: calc(6 * 50px); left: calc(23 * 50px + 25px);">
-                <h2 class="spike-h2">The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</h2>
-            </div>
-            <div id="station-2" class="square station" style="top: calc(10 * 50px); left: calc(23 * 50px);">
-                <img src="./imgs/checkpoint.svg" alt="">
-            </div>
-
-
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(24 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(25 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(26 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(27 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
             </div>
             
+            <div class="ai-winter-unity" style="  left: calc(74 * 50px); top: calc(30 * 50px);">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
 
-            <div class="year" style="top: calc(12 * 50px); left: calc(20 * 50px);">
-                <h6>1957</h6>
-            </div>
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Failure of Machine Translation</h2>
+                    <div class="spike-line"></div>
+                </div>
 
+                <div id="station-30" class="square station" style="bottom: calc(0 * 50px); left: calc(3 * 50px);"></div>
 
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(6 * 50px);"></div>
 
-
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(19 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(20 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(21 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(22 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-
-
-            <div class="spike-text" style="top: calc(6 * 50px); left: calc(23 * 50px + 25px);">
-                <h2 class="spike-h2">The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</h2>
-            </div>
-            <div id="station-2" class="square station" style="top: calc(10 * 50px); left: calc(23 * 50px);">
-                <img src="./imgs/checkpoint.svg" alt="">
-            </div>
-
-
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(24 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(25 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(26 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
-            </div>
-            <div class="square rail" style="top: calc(10 * 50px); left: calc(27 * 50px);">
-                <img src="./imgs/trilho_reto.svg" alt="">
             </div>
             
+            <div class="ai-winter-unity" style="  left: calc(92 * 50px); top: calc(30 * 50px);">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
 
-            <div class="year" style="top: calc(12 * 50px); left: calc(20 * 50px);">
-                <h6>1957</h6>
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Abandonment of connectionism</h2>
+                    <div class="spike-line"></div>
+                </div>
+
+                <div id="station-31" class="square station" style="bottom: calc(0 * 50px); left: calc(3 * 50px);"></div>
+
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(6 * 50px);"></div>
+
             </div>
- -->
+            
+            <div class="ai-winter-unity" style="  left: calc(101 * 50px); top: calc(30 * 50px);">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">DARPA's frustration with the Speech Understanding Research program at Carnegie Mellon University</h2>
+                    <div class="spike-line"></div>
+                </div>
+
+                <div id="station-32" class="square station" style="bottom: calc(0 * 50px); left: calc(3 * 50px);"></div>
+
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(6 * 50px);"></div>
+
+            </div>
+            
+            <div class="ai-winter-unity" style="  left: calc(110 * 50px); top: calc(30 * 50px);">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Large decrease in AI research in the United Kingdom in response to the Lighthill report</h2>
+                    <div class="spike-line"></div>
+                </div>
+
+                <div id="station-33" class="square station" style="bottom: calc(0 * 50px); left: calc(3 * 50px);"></div>
+
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(6 * 50px);"></div>
+
+            </div>
+            
+            <div class="ai-winter-unity" style="  left: calc(119 * 50px); top: calc(30 * 50px);">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">DARPA's cutbacks to academic AI research in general</h2>
+                    <div class="spike-line"></div>
+                </div>
+
+                <div id="station-34" class="square station" style="bottom: calc(0 * 50px); left: calc(3 * 50px);"></div>
+
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(6 * 50px);"></div>
+
+            </div>
+            
+            <div class="ai-winter-unity" style="  left: calc(155 * 50px); top: calc(30 * 50px);">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Second AI Winter (1987-1993)</h2>
+                    <div class="spike-line"></div>
+                </div>
+
+                <div id="station-35" class="square station" style="bottom: calc(0 * 50px); left: calc(3 * 50px);"></div>
+
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(6 * 50px);"></div>
+
+            </div>
+            
+            <div class="ai-winter-unity" style="  left: calc(146 * 50px); top: calc(30 * 50px);">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Collapse of the LISP machine market</h2>
+                    <div class="spike-line"></div>
+                </div>
+
+                <div id="station-36" class="square station" style="bottom: calc(0 * 50px); left: calc(3 * 50px);"></div>
+
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(6 * 50px);"></div>
+
+            </div>
+            
+            <div class="ai-winter-unity" style="  left: calc(164 * 50px); top: calc(30 * 50px);">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">Cancellation of new spending on AI by the Strategic Computing Initiative</h2>
+                    <div class="spike-line"></div>
+                </div>
+
+                <div id="station-37" class="square station" style="bottom: calc(0 * 50px); left: calc(3 * 50px);"></div>
+
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(6 * 50px);"></div>
+
+            </div>
+            
+            <div class="ai-winter-unity" style="  left: calc(200 * 50px); top: calc(30 * 50px);">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">resistance to new expert systems deployment and maintenance</h2>
+                    <div class="spike-line"></div>
+                </div>
+
+                <div id="station-38" class="square station" style="bottom: calc(0 * 50px); left: calc(3 * 50px);"></div>
+
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(6 * 50px);"></div>
+
+            </div>
+            
+            <div class="ai-winter-unity" style="  left: calc(182 * 50px); top: calc(30 * 50px);">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+
+                <div class="spike-text" style="bottom: calc(1 * 50px); left: calc(1 * 50px);">
+                    <h2 class="spike-h2">end of the Fifth Generation computer project's original goals</h2>
+                    <div class="spike-line"></div>
+                </div>
+
+                <div id="station-39" class="square station" style="bottom: calc(0 * 50px); left: calc(3 * 50px);"></div>
+
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(6 * 50px);"></div>
+
+            </div>
+
+            
 
 
 
@@ -165,935 +624,33 @@
 
 
 
-        <!-- Estação 1 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(10 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(11 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(12 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(13 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(14 * 50px + 25px);">
-            <h2 class="spike-h2">Computing Machinery and Intelligence</h2>
-        </div>
-        <div id="station-1" class="square station" style="top: calc(15 * 50px); left: calc(14 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(15 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(16 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(17 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(18 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(11 * 50px);">
-            <h6>1950</h6>
-        </div>
-        <!-- Estação 2 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(19 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(20 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(21 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(22 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(23 * 50px + 25px);">
-            <h2 class="spike-h2">The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</h2>
-        </div>
-        <div id="station-2" class="square station" style="top: calc(15 * 50px); left: calc(23 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(24 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(25 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(26 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(27 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(20 * 50px);">
-            <h6>1957</h6>
-        </div>
-        <!-- Estação 3 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(28 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(29 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(30 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(31 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(32 * 50px + 25px);">
-            <h2 class="spike-h2">Primeira rede neural artificial</h2>
-        </div>
-        <div id="station-3" class="square station" style="top: calc(15 * 50px); left: calc(32 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(33 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(34 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(35 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(36 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(29 * 50px);">
-            <h6>1958</h6>
-        </div>
-        <!-- Estação 4 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(37 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(38 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(39 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(40 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(41 * 50px + 25px);">
-            <h2 class="spike-h2">Adaline</h2>
-        </div>
-        <div id="station-4" class="square station" style="top: calc(15 * 50px); left: calc(41 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(42 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(43 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(44 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(45 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(38 * 50px);">
-            <h6>1960</h6>
-        </div>
-        <!-- Estação 5 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(46 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(47 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(48 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(49 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(50 * 50px + 25px);">
-            <h2 class="spike-h2">Unimate</h2>
-        </div>
-        <div id="station-5" class="square station" style="top: calc(15 * 50px); left: calc(50 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(51 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(52 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(53 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(54 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(47 * 50px);">
-            <h6>1961</h6>
-        </div>
-        <!-- Estação 6 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(55 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(56 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(57 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(58 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(59 * 50px + 25px);">
-            <h2 class="spike-h2">ELIZA</h2>
-        </div>
-        <div id="station-6" class="square station" style="top: calc(15 * 50px); left: calc(59 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(60 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(61 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(62 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(63 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(56 * 50px);">
-            <h6>1966</h6>
-        </div>
-        <!-- Estação 7 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(64 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(65 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(66 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(67 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(68 * 50px + 25px);">
-            <h2 class="spike-h2">A* Algorithm</h2>
-        </div>
-        <div id="station-7" class="square station" style="top: calc(15 * 50px); left: calc(68 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(69 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(70 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(71 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(72 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(65 * 50px);">
-            <h6>1968</h6>
-        </div>
-        <!-- Estação 8 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(73 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(74 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(75 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(76 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(77 * 50px + 25px);">
-            <h2 class="spike-h2">Backpropagation</h2>
-        </div>
-        <div id="station-8" class="square station" style="top: calc(15 * 50px); left: calc(77 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(78 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(79 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(80 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(81 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(74 * 50px);">
-            <h6>1974</h6>
-        </div>
-        <!-- Estação 9 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(82 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(83 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(84 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(85 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(86 * 50px + 25px);">
-            <h2 class="spike-h2">Convolutional Neural Networks</h2>
-        </div>
-        <div id="station-9" class="square station" style="top: calc(15 * 50px); left: calc(86 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(87 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(88 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(89 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(90 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(83 * 50px);">
-            <h6>1989</h6>
-        </div>
-        <!-- Estação 10 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(91 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(92 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(93 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(94 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(95 * 50px + 25px);">
-            <h2 class="spike-h2">C4.5</h2>
-        </div>
-        <div id="station-10" class="square station" style="top: calc(15 * 50px); left: calc(95 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(96 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(97 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(98 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(99 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(92 * 50px);">
-            <h6>1993</h6>
-        </div>
-        <!-- Estação 11 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(100 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(101 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(102 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(103 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(104 * 50px + 25px);">
-            <h2 class="spike-h2">Recurrent Neural Networks</h2>
-        </div>
-        <div id="station-11" class="square station" style="top: calc(15 * 50px); left: calc(104 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(105 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(106 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(107 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(108 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(101 * 50px); width: calc(16 * 50px)!important;">
-            <h6>1997</h6>
-        </div>
-        <!-- Estação 12 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(109 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(110 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(111 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(112 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(113 * 50px + 25px);">
-            <h2 class="spike-h2">Long Short-Term Memory</h2>
-        </div>
-        <div id="station-12" class="square station" style="top: calc(15 * 50px); left: calc(113 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(114 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(115 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(116 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(117 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <!-- <div class="year" style="top: calc(17 * 50px); left: calc(110 * 50px);">
-            <h6>1997</h6>
-        </div> -->
-        <!-- Estação 13 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(118 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(119 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(120 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(121 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(122 * 50px + 25px);">
-            <h2 class="spike-h2">Deep Learning</h2>
-        </div>
-        <div id="station-13" class="square station" style="top: calc(15 * 50px); left: calc(122 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(123 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(124 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(125 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(126 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(119 * 50px);">
-            <h6>2006</h6>
-        </div>
-        <!-- Estação 14 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(127 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(128 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(129 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(130 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(131 * 50px + 25px);">
-            <h2 class="spike-h2">Generative Adversarial Networks (GANs)</h2>
-        </div>
-        <div id="station-14" class="square station" style="top: calc(15 * 50px); left: calc(131 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(132 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(133 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(134 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(135 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(128 * 50px);">
-            <h6>2014</h6>
-        </div>
-        <!-- Estação 15 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(136 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(137 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(138 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(139 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(140 * 50px + 25px);">
-            <h2 class="spike-h2">AlphaGo</h2>
-        </div>
-        <div id="station-15" class="square station" style="top: calc(15 * 50px); left: calc(140 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(141 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(142 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(143 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(144 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(137 * 50px);">
-            <h6>2016</h6>
-        </div>
-        <!-- Estação 16 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(145 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(146 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(147 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(148 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(149 * 50px + 25px);">
-            <h2 class="spike-h2">Transformers</h2>
-        </div>
-        <div id="station-16" class="square station" style="top: calc(15 * 50px); left: calc(149 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(150 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(151 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(152 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(153 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(146 * 50px);">
-            <h6>2017</h6>
-        </div>
-        <!-- Estação 17 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(154 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(155 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(156 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(157 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(158 * 50px + 25px);">
-            <h2 class="spike-h2">BERT</h2>
-        </div>
-        <div id="station-17" class="square station" style="top: calc(15 * 50px); left: calc(158 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(159 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(160 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(161 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(162 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(155 * 50px); width: calc(16 * 50px);">
-            <h6>2018</h6>
-        </div>
-        <!-- Estação 18 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(163 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(164 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(165 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(166 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(167 * 50px + 25px);">
-            <h2 class="spike-h2">AlphaFold</h2>
-        </div>
-        <div id="station-18" class="square station" style="top: calc(15 * 50px); left: calc(167 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(168 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(169 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(170 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(171 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <!-- <div class="year" style="top: calc(17 * 50px); left: calc(164 * 50px);">
-            <h6>2018</h6>
-        </div> -->
-        <!-- Estação 19 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(172 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(173 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(174 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(175 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(176 * 50px + 25px);">
-            <h2 class="spike-h2">AlphaStar</h2>
-        </div>
-        <div id="station-19" class="square station" style="top: calc(15 * 50px); left: calc(176 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(177 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(178 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(179 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(180 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(173 * 50px);">
-            <h6>2019</h6>
-        </div>
-        <!-- Estação 20 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(181 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(182 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(183 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(184 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(185 * 50px + 25px);">
-            <h2 class="spike-h2">GPT-3</h2>
-        </div>
-        <div id="station-20" class="square station" style="top: calc(15 * 50px); left: calc(185 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(186 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(187 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(188 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(189 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(182 * 50px);  width: calc(16*50px);">
-            <h6>2020</h6>
-        </div>
-        <!-- Estação 21 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(190 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(191 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(192 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(193 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(194 * 50px + 25px);">
-            <h2 class="spike-h2">DALL-E</h2>
-        </div>
-        <div id="station-21" class="square station" style="top: calc(15 * 50px); left: calc(194 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(195 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(196 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(197 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(198 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <!-- <div class="year" style="top: calc(17 * 50px); left: calc(191 * 50px);">
-            <h6>2020</h6>
-        </div> -->
-        <!-- Estação 22 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(199 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(200 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(201 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(202 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(203 * 50px + 25px);">
-            <h2 class="spike-h2">Deit</h2>
-        </div>
-        <div id="station-22" class="square station" style="top: calc(15 * 50px); left: calc(203 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(204 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(205 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(206 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(207 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="year" style="top: calc(17 * 50px); left: calc(200 * 50px);  width: calc(16*50px);">
-            <h6>2021</h6>
-        </div>
-        <!-- Estação 23 -->
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(208 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(209 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(210 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(211 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <div class="spike-text" style="top: calc(11 * 50px); left: calc(212 * 50px + 25px);">
-            <h2 class="spike-h2">ELECTRA</h2>
-        </div>
-        <div id="station-23" class="square station" style="top: calc(15 * 50px); left: calc(212 * 50px);">
-            <img src="./imgs/checkpoint.svg" alt="">
-        </div>
-    
-    
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(213 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(214 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(215 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-        <div class="square rail" style="top: calc(15 * 50px); left: calc(216 * 50px);">
-            <img src="./imgs/trilho_reto.svg" alt="">
-        </div>
-    
-    
-        <!-- <div class="year" style="top: calc(17 * 50px); left: calc(209 * 50px);">
-            <h6>2021</h6>
-        </div> -->
+            <div class="down-curve-unity" style="  left: calc(213 * 50px); top: calc(29 * 50px); ">
+                <div class="long-curve-bg"></div>
+            </div>
+
+            <div class="down-curve-unity" style="  left: calc(195 * 50px); top: calc(23 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(0 * 50px);"></div>
+                <div class="square long-rail" style="bottom: calc(0 * 50px); left: calc(9 * 50px);"></div>
+                <div class="long-curve-bg"></div>
+                <div class="left-rail-building" style="bottom: calc(0 * 50px); left: calc(-3 * 50px);"></div>
+            </div>
 
 
-
-
-
-
+            <div class="down-curve-unity" style="  left: calc(236 * 50px); top: calc(35 * 50px); ">
+                <div class="square long-rail" style="bottom: calc(6 * 50px); left: calc(0 * 50px);"></div>
+                <div class="long-curve-bg"></div>
+            </div>
+            
+            <div class="interactive-layer" id="interactive-layer"></div>
+        </div>
+        
+        
+        
+        
     </main>
+    
 
-    <div class="interactive-layer" id="interactive-layer"></div>
+
 
     <section class="content-section">
         <div class="content-card" id="content-card">
@@ -1110,21 +667,24 @@
 
         </div>
     </section>
-
-
+    
     <div class="scale-info-div" id="scale-info"> 1.00 X</div>
 
 
+
     <footer class="footer-page">
-        <h5 id="text-footer-desktop" class="desktop-footer">Created and maintained by <a href="https://technium.me/" target="_blank">technium.me</a>. The History of AI. Jan 27 Version. Free Preview. We are working to be the largest collection in the history of artificial intelligence. Your feedback will help us improve. Always in beta.</h5>
-        <h5 id="text-footer-mobile" class="mobile-footer">Created and maintained by <a href="https://technium.me/" target="_blank">technium.me</a>.</h5>
+        <h5 id="text-footer-desktop" class="desktop-footer">Created and maintained by <a href="https://technium.me/" target="_blank">technium.me</a>. The History of AI. Jan 27 Version. Free Preview. We are working to be the largest collection in the history of artificial intelligence. Your <a href="" target="_blank">feedback</a> will help us improve. Always in beta.</h5>
+        <h5 id="text-footer-mobile" class="mobile-footer">Created and maintained by <a href="https://technium.me/" target="_blank">technium.me</a>. Your <a href="" target="_blank">feedback</a> will help us improve.</h5>
     </footer>
 
     
     <!-- Código em JS -->
     <script type="text/javascript" src="./js/data.js"></script>
+
+    
     <script type="text/javascript" src="./js/script.js"></script>
-    <!-- <script type="text/javascript" src="./js/test.js"></script> -->
+    <script type="text/javascript" src="./js/test.js"></script>
+
 
 </body>
 </html>
