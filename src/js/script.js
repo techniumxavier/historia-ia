@@ -106,6 +106,8 @@ button3.addEventListener('click', () => {
 })
 
 
+
+
 let contentIndex = 0;
 
 function updateContentCard(){
@@ -114,19 +116,38 @@ function updateContentCard(){
   const textFooterDesktop = document.getElementById('text-footer-desktop')
   const textFooterMobile = document.getElementById('text-footer-mobile')
 
-  //Atualizando os textos do footer e o título da página
+  const line1 = document.getElementById('line-1');
+  const line2 = document.getElementById('line-2');
+  const line3 = document.getElementById('line-3');
+  const line4 = document.getElementById('line-4');
+
+
+  //Atualizando os textos do footer, o título da página e o nome das linhas
   if(currentLanguage == 'en'){
     titlePage.innerHTML = 'The History of AI';
     textFooterDesktop.innerHTML = 'Created and maintained by <a href="https://technium.me/" target="_blank">technium.me</a>. The History of AI. Jan 27 Version. Free Preview. We are working to be the largest collection in the history of artificial intelligence. Your <a href="" target="_blank">feedback</a> will help us improve. Always in beta.';
     textFooterMobile.innerHTML = 'Created and maintained by <a href="https://technium.me/" target="_blank">technium.me</a>. Your <a href="" target="_blank">feedback</a> will help us improve.';
+    line1.innerHTML = 'Artificial Intelligence Backbone';
+    line2.innerHTML = 'Biological conditioning theory';
+    line3.innerHTML = 'Optimization theory';
+    line4.innerHTML = 'Reinforcement learning theory';
+
   } else if (currentLanguage == 'pt'){
     titlePage.innerHTML = 'A História da IA'
     textFooterDesktop.innerHTML = 'Criado e mantido pela <a href="https://technium.me/" target="_blank">technium.me</a>. A História da IA. Versão de 27 de janeiro. Visualização gratuita. Estamos trabalhando para ser a maior coleção da história da inteligência artificial. Seus <a href="" target="_blank">comentários</a> nos ajudarão a melhorar. Sempre em beta.';
     textFooterMobile.innerHTML = 'Criado e mantido pela <a href="https://technium.me/" target="_blank">technium.me</a>. Seus <a href="" target="_blank">comentários</a> nos ajudarão a melhorar.'
+    line1.innerHTML = 'Espinha Dorsal da Inteligência Artificial';
+    line2.innerHTML = 'Teoria do condicionamento biológico';
+    line3.innerHTML = 'Teoria da otimização';
+    line4.innerHTML = 'Teoria do aprendizado por reforço';
   } else if (currentLanguage == 'es'){
     titlePage.innerHTML = 'La historia de la IA'
     textFooterDesktop.innerHTML = 'Creado y mantenido por <a href="https://technium.me/" target="_blank">technium.me</a>. La historia de la IA. Versión del 27 de enero. Vista previa gratuita. Estamos trabajando para ser la colección más grande en la historia de la inteligencia artificial. Tu <a href="" target="_blank">recomendación</a> nos ayudará a mejorar. Siempre en beta.';
     textFooterMobile.innerHTML = 'Creado y mantenido por <a href="https://technium.me/" target="_blank">technium.me</a>. Tu <a href="" target="_blank">recomendación</a> nos ayudará a mejorar.'
+    line1.innerHTML = 'Columna Vertebral de la Inteligencia Artificial';
+    line2.innerHTML = 'Teoría del condicionamiento biológico';
+    line3.innerHTML = 'Teoría de la optimización';
+    line4.innerHTML = 'Teoría del aprendizaje por refuerzo';
   }
 
 
@@ -201,6 +222,12 @@ function updateContentCard(){
     //Ano
     contentYear.innerHTML = currentData.data_ano;
   }
+
+
+
+
+
+
 
 }
 
